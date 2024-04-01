@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Webpage with Video</title>
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Video container */
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px; /* Adjust max-width as needed */
+      margin: 0 auto;
+    }
+
+    /* Video */
+    video {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Text credit */
+    .text-credit {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      color: #666;
+      animation: slideUp 1s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    /* Keyframes for animation */
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+    }
+
+    /* Centering credit section */
+    @media only screen and (max-width: 600px) {
+      .text-credit {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<center>
+  <h1>Hahahahaha!</h1>
+  
+  <p>You've fallen victim to a rickroll this April Fools' Day: </p>
+
+  <!-- Video container -->
+  <div class="video-container">
+    <video autoplay controls>
+      <source src="video_20240401_095502_edit.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <h2>April Fools!</h2> <br>
+<p>Copy this link and share it with everyone to make <br> them rickrolled too! 😜😂</p>
+
+  <!-- Text Credit -->
+  <div class="text-credit">Made with ❤️ by Shir</div>
+</center>
+</body>
+</html>
